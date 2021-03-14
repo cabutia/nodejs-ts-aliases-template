@@ -8,9 +8,7 @@
   "scripts": {
     "build": "cross-env tsc",
     "start:prod": "cross-env node build/index.js",
-    "serve": "cross-env nodemon ./build/index.js",
-    "build:watch": "cross-env tsc -w -p .",
-    "dev": "cross-env concurrently -k \"tsc -w -p .\" \"nodemon ./build/index.js\""
+    "start:dev": "cross-env concurrently -k \"tsc -w -p .\" \"nodemon ./build/index.js\""
   },
   "_moduleAliases": {
     "@": "build"
